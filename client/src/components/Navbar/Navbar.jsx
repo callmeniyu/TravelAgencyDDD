@@ -28,7 +28,7 @@ const Navbar = () => {
                 </Link>
                 <Link>
                     <li>
-                        <Button className="nav-btn" text=""/>
+                        <Button className="nav-btn" text="Contact"/>
                     </li>
                 </Link>
             </ul>

@@ -8,7 +8,7 @@ import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from 
 
 const Home = () => {
     const SectionStyle = {
-        height: "100%",
+        height: "100vh",
         width: "100%",
         display: "flex",
         justifyContent: "center",
@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <div className="hero">
             <Fullpage>
-                <FullpageNavigation />
+                <FullpageNavigation style={{ cursor: "pointer",width:"1rem"}} />
                 <FullPageSections>
                     <FullpageSection>
                         <Hero style={SectionStyle} />

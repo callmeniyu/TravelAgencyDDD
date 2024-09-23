@@ -1,12 +1,14 @@
 .navbar{
     position: absolute;
     left: 0;
-    width: 100%;
     top: 0;
+    width: 100%;
     display: flex;
-    background-color: red;
+    height: 4rem;
     justify-content: space-between;
     padding: 0 4rem;
+    background-color: transparent;
+    z-index: 2;
 }
 .nav-logo{
     display: flex;
@@ -26,6 +28,7 @@
     align-items: center;   
     font-weight: 550; 
     font-size: 0.9rem;
+    animation: slideIn 0.5s ease-in-out;
 }
 .nav-elements a{
     color: #fff;
@@ -46,9 +49,10 @@
     color: white;
     transition: 0.3s ease-in;
     cursor: pointer;
+    z-index: 99;
 }
 
-@media(max-width:750px){
+@media(max-width:900px){
     .navbar{
         padding: 0 2rem;
     }
