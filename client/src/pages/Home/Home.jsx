@@ -15,7 +15,7 @@ const Home = () => {
         alignItems: "center",
     }
     return (
-        <div className="hero">
+        <div className="home">
             <Fullpage>
                 <FullpageNavigation style={{ cursor: "pointer",width:"1rem"}} />
                 <FullPageSections>

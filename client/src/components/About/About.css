@@ -1,0 +1,33 @@
+.about{
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../assets/svg/about_wave.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+.about-main{
+    margin-top: 1rem;
+    display: flex;
+    padding:0 15% 0 8%;
+}
+.about-left img{
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover; 
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+.about-right{
+    padding: 3rem 1.5rem 2rem 4.4rem;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.about-right-description p{
+    margin-top: 1rem;
+}
+
