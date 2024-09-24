@@ -23,3 +23,8 @@ a{
     font-size: 2rem;
     text-align: center;
 }
+@media(max-width:500px){
+    .section-header{
+        font-size: 1.6rem;
+    }
+}
