@@ -1,0 +1,108 @@
+.destinations {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    background-image: url("../../assets/svg/destinations.svg");
+    background-position: -2rem -7rem;
+    height: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto !important; 
+    padding-bottom: 2rem;
+}
+.destinations::-webkit-scrollbar{
+    display: none;
+}
+.destinations-main {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.destinations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.destinations-container-top img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 1.5rem;
+    object-fit: cover;
+}
+.destinations-container:nth-child(1) img {
+    transform: rotate(-5deg);
+}
+.destinations-container:nth-child(3) img {
+    transform: rotate(5deg);
+}
+.destinations-container-bottom {
+    /* background-color: red; */
+}
+.destinations-container-btn {
+    color: var(--orange_color);
+    cursor: pointer;
+    margin-top: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.destinations-container-btn .arrow {
+    font-size: 1.2rem;
+}
+@media (max-width: 1100px) {
+    .destinations {
+        padding: 0 1rem;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 980px) {
+    .destinations {
+        background-image: none;
+    }
+    .destinations-main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .destinations-container{
+        width: 20rem;
+    }
+}
+@media(max-width:800px){
+    .destinations-main{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .destinations-container{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .destinations .section-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .destinations-main{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .destinations-container{
+        padding: 0 1rem 0 1.5rem;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .destinations-container{
+        width: 100%;
+    }
+    .destinations-container:nth-child(1) .destinations-container-top{
+        transform: rotate(5deg);
+    }
+    .destinations-container:nth-child(3) .destinations-container-top{
+        transform: rotate(-5deg);
+    }
+}

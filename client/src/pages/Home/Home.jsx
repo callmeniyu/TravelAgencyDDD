@@ -8,11 +8,11 @@ import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from 
 
 const Home = () => {
     const SectionStyle = {
-        height: "100vh",
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        // height: "100%",
+        // width: "100%",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
     }
     return (
         <div className="home">
