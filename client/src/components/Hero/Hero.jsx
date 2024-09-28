@@ -6,7 +6,23 @@ import hero_img3 from '../../assets/images/hero3.png';
 import hero_img4 from '../../assets/images/hero2.png';
 import Navbar from '../Navbar/Navbar';
 
-const Hero = ({scrollTo}) => {
+const Hero = () => {
+  const preloadImages = (imageUrls) => {
+    imageUrls.forEach((url) => {
+        const img = new Image(); 
+        img.src = url; 
+    });
+};
+
+const imagesToPreload = [
+  hero_img1,
+  hero_img2,
+  hero_img3,
+  hero_img4
+];
+
+preloadImages(imagesToPreload);
+
   const carouselRef = useRef(null);
   const sliderRef = useRef(null);
   const thumbnailRef = useRef(null);
@@ -61,7 +77,7 @@ const Hero = ({scrollTo}) => {
   return (
     <div>
       <header>
-        <Navbar scrollTo={scrollTo}/>
+        <Navbar/>
       </header>
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={sliderRef}>

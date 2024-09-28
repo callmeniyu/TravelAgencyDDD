@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import Button from "../Button/Button"
 import { IoMenu } from "react-icons/io5"
 
-const Navbar = ({ scrollTo }) => {
+const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
     return (
         <div className={`navbar ${menuToggle == true ? "nav-on" : ""}`}>

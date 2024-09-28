@@ -10,19 +10,13 @@ import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
-    const scrollTo = (section) => {
-        const fullpageInstance = document.querySelector('.fullpage'); 
-        if (fullpageInstance) {
-            fullpageInstance.scrollTo(section); 
-        }
-    };
     return (
         <div className="home">
             <Fullpage>
                 <FullpageNavigation style={{ cursor: "pointer",width:"1rem"}} />
                 <FullPageSections>
                     <FullpageSection>
-                        <Hero id="hero" scrollTo={scrollTo}/>
+                        <Hero id="hero" />
                     </FullpageSection>
                     <FullpageSection>
                         <About id="about"/>
