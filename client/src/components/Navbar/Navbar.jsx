@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className={`navbar ${menuToggle == true ? "nav-on" : ""}`}>
             <div className="nav-logo">
                 <img src={Logo} alt="nav-logo" />
-                <h2>DDD</h2>
+                <h2>Devinedestinydiscovery</h2>
             </div>
             <ul className={`nav-elements ${menuToggle == true ? "nav-elements-on" : ""}`}>
                 <Link to="/about">

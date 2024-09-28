@@ -16,6 +16,9 @@
     align-items: center;
     color: white;
 }
+.nav-logo h2{
+    font-size: 1rem;
+}
 .nav-logo img{
     width: 2.5rem;
     height: 2.3rem;
@@ -90,6 +93,11 @@
     }
     .nav-elements{
         width: 70%;
+    }
+}
+@media(min-width:1300px){
+    .navbar{
+        padding:0 15rem;
     }
 }
 

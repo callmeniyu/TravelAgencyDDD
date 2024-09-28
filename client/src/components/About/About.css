@@ -6,8 +6,11 @@
     background-image: url("../../assets/svg/about_wave.svg");
     background-position: bottom;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: auto;
     height: 100vh;
+}
+.about::-webkit-scrollbar{
+    display: none;
 }
 .about-main{
     margin-top: 1rem;

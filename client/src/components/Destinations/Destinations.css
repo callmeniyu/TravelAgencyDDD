@@ -93,8 +93,8 @@
     .destinations-container{
         padding: 0 1rem 0 1.5rem;
         flex-direction: column;
-        text-align: left;
-        align-items: flex-start;
+        text-align: center;
+        align-items: center;
     }
     .destinations-container{
         width: 100%;
