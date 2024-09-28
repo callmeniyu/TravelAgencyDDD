@@ -80,5 +80,10 @@
         height: 15rem;
         border-radius: 0 0 2rem 2rem;
     }
+    @media(max-width:600px){
+        .about{
+            margin-top: auto;
+        }
+    }
 }
 
