@@ -8,7 +8,6 @@ import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from 
 import Testimonials from "../../components/Testimonials/Testimonials"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
-import Navbar from "../../components/Navbar/Navbar"
 
 const Home = () => {
     const scrollTo = (section) => {
@@ -22,7 +21,6 @@ const Home = () => {
             <Fullpage>
                 <FullpageNavigation style={{ cursor: "pointer",width:"1rem"}} />
                 <FullPageSections>
-                <Navbar scrollTo={scrollTo} />
                     <FullpageSection>
                         <Hero id="hero" scrollTo={scrollTo}/>
                     </FullpageSection>

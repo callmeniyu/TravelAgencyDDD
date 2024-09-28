@@ -11,7 +11,7 @@ const Navbar = ({ scrollTo }) => {
         <div className={`navbar ${menuToggle == true ? "nav-on" : ""}`}>
             <div className="nav-logo">
                 <img src={Logo} alt="nav-logo" />
-                <h2>Devinedestinydiscovery</h2>
+                <h2>Devinedestinationdiscovery</h2>
             </div>
             <ul className={`nav-elements ${menuToggle == true ? "nav-elements-on" : ""}`}>
                 <Link onClick={() => scrollTo('contact')}>

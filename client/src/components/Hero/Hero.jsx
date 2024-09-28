@@ -61,7 +61,7 @@ const Hero = ({scrollTo}) => {
   return (
     <div>
       <header>
-        {/* <Navbar scrollTo={scrollTo}/> */}
+        <Navbar scrollTo={scrollTo}/>
       </header>
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={sliderRef}>
