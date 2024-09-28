@@ -1,8 +1,13 @@
 .footer{
+    margin-top: 10rem;
     padding:4rem;
     background-color: rgb(31, 27, 27);
     height: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 20rem;
 }
 .footer-main{
     display: flex;
@@ -35,8 +40,9 @@
 }
 .footer-mark{
     text-align: center;
-    margin-top: 3rem;
     font-size: 0.6rem;
+    /* align-self: flex-end; */
+    margin-top: 3rem;
 }
 .footer-mark span{
     color: rgb(79, 28, 166);

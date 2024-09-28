@@ -8,32 +8,40 @@ import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from 
 import Testimonials from "../../components/Testimonials/Testimonials"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
+import Navbar from "../../components/Navbar/Navbar"
 
 const Home = () => {
+    const scrollTo = (section) => {
+        const fullpageInstance = document.querySelector('.fullpage'); 
+        if (fullpageInstance) {
+            fullpageInstance.scrollTo(section); 
+        }
+    };
     return (
         <div className="home">
             <Fullpage>
                 <FullpageNavigation style={{ cursor: "pointer",width:"1rem"}} />
                 <FullPageSections>
+                <Navbar scrollTo={scrollTo} />
                     <FullpageSection>
-                        <Hero />
+                        <Hero id="hero" scrollTo={scrollTo}/>
                     </FullpageSection>
                     <FullpageSection>
-                        <About />
+                        <About id="about"/>
                     </FullpageSection>
                     <FullpageSection>
-                        <Destinations />
+                        <Destinations id="destinations"/>
                     </FullpageSection>
                     <FullpageSection>
-                        <Pricing />
+                        <Pricing id="pricing"/>
                     </FullpageSection>
                     <FullpageSection>
-                        <Testimonials />
+                        <Testimonials id="testimonials"/>
                     </FullpageSection>
                     <FullpageSection>
-                        <Contact />
+                        <Contact id="contact"/>
                     </FullpageSection>
-                    <FullpageSection style={{height:"50vh"}}>
+                    <FullpageSection style={{height:"60vh"}}>
                         <Footer />
                     </FullpageSection>
                 </FullPageSections>

@@ -75,12 +75,8 @@
     cursor: pointer;
 }
 @media(min-width:1300px){
-    body{
-        background-color: red;
-    }
     .contact{
-        padding:0 20rem;
-        
+        padding: 5rem 15%;
     }
 }
 @media(max-width:1050px){

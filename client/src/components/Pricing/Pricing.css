@@ -71,6 +71,11 @@
     cursor: pointer;
     margin-top: 1rem;
 }
+@media(min-width:1300px){
+    .pricing{
+        padding: 5rem 15%;
+    }
+}
 @media(max-width:900px){
     .pricing{
         padding: 0 2rem;

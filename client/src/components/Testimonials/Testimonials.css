@@ -36,6 +36,11 @@
     height: 3rem;
     border-radius: 50%;
 }
+@media(min-width:1300px){
+    .testimonials{
+        padding: 5rem 15%;
+    }
+}
 @media(max-width:950px){
     .testimonials-main{
         flex-wrap: wrap;

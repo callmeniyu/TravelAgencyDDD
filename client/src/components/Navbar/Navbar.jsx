@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import Button from "../Button/Button"
 import { IoMenu } from "react-icons/io5"
 
-const Navbar = () => {
+const Navbar = ({ scrollTo }) => {
     const [menuToggle, setMenuToggle] = useState(false)
     return (
         <div className={`navbar ${menuToggle == true ? "nav-on" : ""}`}>
@@ -14,19 +14,7 @@ const Navbar = () => {
                 <h2>Devinedestinydiscovery</h2>
             </div>
             <ul className={`nav-elements ${menuToggle == true ? "nav-elements-on" : ""}`}>
-                <Link to="/about">
-                    <li>ABOUT</li>
-                </Link>
-                <Link to="/destinations">
-                    <li>DESTINATIONS</li>
-                </Link>
-                <Link to="/pricing">
-                    <li>PRICING</li>
-                </Link>
-                <Link to="/reviews">
-                    <li>REVIEWS</li>
-                </Link>
-                <Link>
+                <Link onClick={() => scrollTo('contact')}>
                     <li>
                         <Button className="nav-btn" text="Contact"/>
                     </li>

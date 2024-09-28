@@ -37,6 +37,11 @@
 .about-right-description p{
     margin-top: 1rem;
 }
+@media(min-width:1300px){
+    .about{
+        padding: 0 15%;
+    }
+}
 @media(max-width:1080px){
     .about-right{
         padding-left: 2rem;

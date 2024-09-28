@@ -6,7 +6,7 @@ import hero_img3 from '../../assets/images/hero3.png';
 import hero_img4 from '../../assets/images/hero2.png';
 import Navbar from '../Navbar/Navbar';
 
-const Hero = () => {
+const Hero = ({scrollTo}) => {
   const carouselRef = useRef(null);
   const sliderRef = useRef(null);
   const thumbnailRef = useRef(null);
@@ -61,7 +61,7 @@ const Hero = () => {
   return (
     <div>
       <header>
-        <Navbar />
+        {/* <Navbar scrollTo={scrollTo}/> */}
       </header>
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={sliderRef}>
