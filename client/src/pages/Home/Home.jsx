@@ -1,4 +1,4 @@
-import React, { Suspense } from "react"
+import React from "react"
 import "./Home.css"
 import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from "@ap.cx/react-fullpage"
 const Hero = React.lazy(() => import("../../components/Hero/Hero"))
@@ -8,18 +8,10 @@ const Destinations = React.lazy(() => import("../../components/Destinations/Dest
 const Testimonials = React.lazy(() => import("../../components/Testimonials/Testimonials"))
 const Contact = React.lazy(() => import("../../components/Contact/Contact"))
 const Footer = React.lazy(() => import("../../components/Footer/Footer"))
-import PropagateLoader from "react-spinners/PropagateLoader"
 
 const Home = () => {
     return (
         <div className="home">
-            <Suspense
-                fallback={
-                    <div className="loader-container">
-                        <PropagateLoader data-testid="loader" color="#f1693b" className="loader" />
-                    </div>
-                }
-            ></Suspense>
             <Fullpage>
                 <FullpageNavigation style={{ cursor: "pointer", width: "1rem" }} />
                 <FullPageSections>
