@@ -287,6 +287,20 @@
         opacity: 0;
     }
 }
+@media(min-width:1500px){
+    .carousel .content .title{
+        width: 75rem;
+        font-size:8rem !important;
+    }
+    .carousel .list .item .content{
+        top: 15%;
+        left: 30%;
+    }
+    .carousel .list .item .content .author{
+        font-size: 2rem;
+        width: 10rem;
+    }
+}
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{
         padding-right: 0;

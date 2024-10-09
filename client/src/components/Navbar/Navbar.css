@@ -55,7 +55,18 @@
     cursor: pointer;
     z-index: 99;
 }
-
+@media(min-width:1500px){
+    .navbar{
+        padding: 6.5rem 15rem !important;
+    }
+    .nav-logo img{
+        width: 5rem;
+        height: 4rem;
+    }
+    .nav-logo h2{
+        font-size: 3rem;
+    }
+}
 @media(min-width:1300px){
     .navbar{
         padding: 0 8.5%;

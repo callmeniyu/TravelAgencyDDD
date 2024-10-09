@@ -18,17 +18,16 @@ const Hero = () => {
   let runNextAuto;
   let runTimeOut;
 
-  // Lazy-load images to improve performance
-  const lazyLoadImages = (imageUrls) => {
-    imageUrls.forEach((url) => {
-      const img = new Image();
-      img.src = url;
-      img.loading = 'lazy';  // Ensure lazy loading for all images
-    });
-  };
+  // const lazyLoadImages = (imageUrls) => {
+  //   imageUrls.forEach((url) => {
+  //     const img = new Image();
+  //     img.src = url;
+  //     img.loading = 'lazy'; 
+  //   });
+  // };
 
-  const imagesToPreload = [hero_img1, hero_img2, hero_img3, hero_img4];
-  lazyLoadImages(imagesToPreload);
+  // const imagesToPreload = [hero_img1, hero_img2, hero_img3, hero_img4];
+  // lazyLoadImages(imagesToPreload);
 
   // Optimized slider function with useCallback
   const showSlider = useCallback((type) => {
