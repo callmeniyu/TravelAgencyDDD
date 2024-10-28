@@ -31,11 +31,12 @@
 }
 .footer-social-icon{
     font-size: 2rem;
+    cursor: pointer;
 }
 .footer-right p{
 }
 .footer-left p{
-    width: 40%;
+    width: 50%;
 }
 .footer-mark{
     text-align: center;
@@ -46,6 +47,24 @@
 .footer-mark span{
     color: rgb(79, 28, 166);
     font-weight: 600;
+}
+@media(min-width:1300px){
+    .footer-main{
+        font-size: 1.5rem;
+    }
+    .footer .nav-logo{
+        margin-bottom: 2rem;
+    }
+    .footer-social{
+        gap: 3rem;
+    }
+    .footer-social-icon{
+        font-size: 3rem;
+    }
+    .footer-right{
+        gap: 3rem;
+        align-items: center;
+    }
 }
 @media(max-width:900px){
     .footer-left p{

@@ -44,32 +44,38 @@ const Hero = () => {
       carouselRef.current.classList.add('prev');
     }
 
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-      carouselRef.current.classList.remove('next');
-      carouselRef.current.classList.remove('prev');
-    }, 1000);  // Reduced timeout for better UX
+    // clearTimeout(runTimeOut);
+    // runTimeOut = setTimeout(() => {
+    //   carouselRef.current.classList.remove('next');
+    //   carouselRef.current.classList.remove('prev');
+    // }, 1000);
+    // Reduced timeout for better UX
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-      nextRef.current.click();
-    }, timeAutoNext);
+    // clearTimeout(runNextAuto);
+    // runNextAuto = setTimeout(() => {
+    //   nextRef.current.click();
+    // }, timeAutoNext);
   }, [timeAutoNext]);
 
-  // Use useEffect for auto-slide functionality
   useEffect(() => {
-    runNextAuto = setTimeout(() => {
-      nextRef.current.click();
-    }, timeAutoNext);
-
-    nextRef.current.onclick = () => showSlider('next');
+        nextRef.current.onclick = () => showSlider('next');
     prevRef.current.onclick = () => showSlider('prev');
+  },[showSlider])
 
-    return () => {
-      clearTimeout(runNextAuto);
-      clearTimeout(runTimeOut);
-    };
-  }, [showSlider]);
+  // Use useEffect for auto-slide functionality
+  // useEffect(() => {
+  //   runNextAuto = setTimeout(() => {
+  //     nextRef.current.click();
+  //   }, timeAutoNext);
+
+  //   nextRef.current.onclick = () => showSlider('next');
+  //   prevRef.current.onclick = () => showSlider('prev');
+
+  //   return () => {
+  //     clearTimeout(runNextAuto);
+  //     clearTimeout(runTimeOut);
+  //   };
+  // }, [showSlider]);
 
   return (
     <div>
@@ -85,11 +91,11 @@ const Hero = () => {
             <div className="content">
               <div className="author">WELCOME ABOARD!</div>
               <div className="title">Discover the Sacred Essence of India’s <span className='hero-title-span'>Divine Destinations</span></div>
-              <div className="des">Experience the spiritual charm of Mathura, Badrinath, Gita Mandir, and Kusum Sarovar.</div>
-              <div className="buttons">
+              <div className="des">Experience the spiritual charm of Kedarnath, Badrinath, Prayagraj, Mathura, Ayodhya,  Varanasi, Chardham , Tungnath.</div>
+              {/* <div className="buttons">
                 <button>SEE DETAILS</button>
                 <button>CONTACT</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="item">
@@ -98,10 +104,10 @@ const Hero = () => {
               <div className="author">WELCOME ABOARD!</div>
               <div className="title">Reconnect with Divinity at India’s Most Revered<span className='hero-title-span'> Spiritual</span> Sites.</div>
               <div className="des">Discover the sacred heritage of India’s holy destinations on a journey of faith and self-discovery.</div>
-              <div className="buttons">
+              {/* <div className="buttons">
                 <button>SEE DETAILS</button>
                 <button>CONTACT</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="item">
@@ -110,10 +116,10 @@ const Hero = () => {
               <div className="author">WELCOME ABOARD!</div>
               <div className="title">Unveil the Mystical Beauty of India’s Divine <span className='hero-title-span'>Pilgrimage</span></div>
               <div className="des">From the banks of the Yamuna to the peaks of the Himalayas, a spiritual awakening awaits.</div>
-              <div className="buttons">
+              {/* <div className="buttons">
                 <button>SEE DETAILS</button>
                 <button>CONTACT</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="item">
@@ -122,10 +128,10 @@ const Hero = () => {
               <div className="author">WELCOME ABOARD!</div>
               <div className="title">Walk the Sacred Trails of India’s <span className='hero-title-span'>Ancient Holy Sites</span></div>
               <div className="des">Embark on a soul-stirring journey through India’s sacred temples, rivers, and mountains.</div>
-              <div className="buttons">
+              {/* <div className="buttons">
                 <button>SEE DETAILS</button>
                 <button>CONTACT</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

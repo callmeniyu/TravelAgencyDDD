@@ -39,7 +39,10 @@
 }
 @media(min-width:1300px){
     .about{
-        padding: 0 15%;
+        padding: 0 10%;
+    }
+    .about-right{
+        font-size: 1.5rem;
     }
 }
 @media(max-width:1080px){

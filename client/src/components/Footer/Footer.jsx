@@ -14,11 +14,11 @@ const Footer = () => {
                 <div className="footer-left">
                     <div className="nav-logo">
                         <img src={Logo} alt="" />
-                        <h2>Devinedestinydiscovery</h2>
+                        <h2>Divine Destionation Discoveries</h2>
                     </div>
                     <p>
-                        Divinedestionationdiscoveries, 3rd Floor, Vantage Plaza, Koramangala 6th Block, Bengaluru, Karnataka
-                        560095
+                        DDD, A-36, Block-A<br />
+                        Near Electronic City Metro Station<br />Sector 62, Noida
                     </p>
                 </div>
                 <div className="footer-right">

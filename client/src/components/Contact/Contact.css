@@ -15,8 +15,7 @@
     width: 40%;
     overflow: hidden;
     border-radius: 1rem 0 0 1rem;
-    height: 33rem;
-
+    height: 100%;
 }
 .contact-right {
     width: 60%;
@@ -70,13 +69,28 @@
     color: white;
     display: flex;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     align-self: center;
     cursor: pointer;
 }
 @media(min-width:1300px){
     .contact{
-        padding: 5rem 15%;
+        padding: 5rem 10%;
+    }
+    .contact-right{
+        font-size: 1.2rem;
+    }
+    .contact-right-bottom textarea{
+        height: 15rem;
+    }
+    .contact-left{
+        height: 40rem;
+    }
+    .contact-left img{
+        height: 100%;
+    }
+    .contact-submit{
+        margin-top: 2rem;
     }
 }
 @media(max-width:1050px){

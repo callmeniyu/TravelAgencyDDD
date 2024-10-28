@@ -55,21 +55,17 @@
     cursor: pointer;
     z-index: 99;
 }
-@media(min-width:1500px){
-    .navbar{
-        padding: 6.5rem 15rem !important;
-    }
-    .nav-logo img{
-        width: 5rem;
-        height: 4rem;
-    }
-    .nav-logo h2{
-        font-size: 3rem;
-    }
-}
 @media(min-width:1300px){
     .navbar{
-        padding: 0 8.5%;
+        padding: 4rem 3%;
+    }
+    .navbar .nav-logo h2{
+        font-size: 1.8rem;
+    }
+    .nav-btn{
+        font-size: 1.2rem;
+        padding: 1.5rem 3rem;
+        border-radius: 2rem;
     }
 }
 @media(max-width:900px){

@@ -2,6 +2,7 @@ import React from "react"
 import "./Contact.css"
 import SectionTitle from "../../components/SectionTitle/SectionTitle"
 import contact1_img from "../../assets/images/contact1.jpg"
+import contact_phone from "../../assets/images/Contact_us_amico.png"
 const Contact = () => {
     return (
         <div className="contact">
@@ -11,7 +12,7 @@ const Contact = () => {
             </h2>
             <div className="contact-main">
                 <div className="contact-left">
-                    <img src={contact1_img} alt="contact1_img" />
+                    <img src={contact_phone} alt="contact1_img" />
                 </div>
                 <form className="contact-right">
                     <div className="contact-right-inputs">
@@ -20,7 +21,7 @@ const Contact = () => {
                             <input type="text" name="contact-name" id="contact-name" className="contact-name" />
                         </div>
                         <div>
-                            <label htmlFor="destination">Destinations</label>
+                            <label htmlFor="destination">Place</label>
                             <input type="text" name="destination" id="destination" className="contact-destination" />
                         </div>
                         <div>

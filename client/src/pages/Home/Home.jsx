@@ -24,9 +24,9 @@ const Home = () => {
                     <FullpageSection>
                         <Destinations id="destinations" />
                     </FullpageSection>
-                    <FullpageSection>
+                    {/* <FullpageSection>
                         <Pricing id="pricing" />
-                    </FullpageSection>
+                    </FullpageSection> */}
                     <FullpageSection>
                         <Testimonials id="testimonials" />
                     </FullpageSection>

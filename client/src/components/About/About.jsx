@@ -2,6 +2,7 @@ import React from "react"
 import "./About.css"
 import SectionTitle from "../SectionTitle/SectionTitle"
 import about_img from "../../assets/images/about.jpeg"
+import Spiritual_BG from "../../assets/images/Spiritual_BG.jpg"
 import { motion } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
 
@@ -43,7 +44,7 @@ const About = () => {
             What Sets Us Apart</h2>
             <div className="about-main">
                 <div className="about-left">
-                    <img src={about_img} alt="about-img" />
+                    <img src={Spiritual_BG} alt="about-img" />
                 </div>
                 <div className="about-right">
                     <motion.h2

@@ -8,7 +8,6 @@ import profile_img3 from "../../assets/images/testimonial_img5.jpg"
 import { motion } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
 
-
 const Testimonials = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 600 })
 
@@ -60,8 +59,74 @@ const Testimonials = () => {
                 Reviews and Reflections
             </h2>
             <div className="testimonials-main">
+                <div className="testimonials-main-top">
+                    <motion.div
+                        variants={Variant1}
+                        whileInView={getVariant()}
+                        viewport={{ once: true }}
+                        className="testimonials-container"
+                    >
+                        <LuQuote className="testimonials-quote-icon" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
+                            sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? 
+                        </p>
+                        <div className="testimonials-profile">
+                            <div className="testimonials-profile-left">
+                                <img src={profile_img1} alt="" />
+                            </div>
+                            <div className="testimonials-profile-right">
+                                <h3>John Fernandez</h3>
+                                <p>Aaro ivan aaro</p>
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        variants={Variant2}
+                        whileInView={getVariant()}
+                        viewport={{ once: true }}
+                        className="testimonials-container"
+                    >
+                        <LuQuote className="testimonials-quote-icon" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
+                            sapiente tenetur, laudantium impedit quam quis cupiditate quos odio?
+                        </p>
+                        <div className="testimonials-profile">
+                            <div className="testimonials-profile-left">
+                                <img src={profile_img2} alt="" />
+                            </div>
+                            <div className="testimonials-profile-right">
+                                <h3>John Fernandez</h3>
+                                <p>Aaro ivan aaro</p>
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        variants={Variant3}
+                        whileInView={getVariant()}
+                        viewport={{ once: true }}
+                        className="testimonials-container"
+                    >
+                        <LuQuote className="testimonials-quote-icon" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
+                            sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? 
+                        </p>
+                        <div className="testimonials-profile">
+                            <div className="testimonials-profile-left">
+                                <img src={profile_img3} alt="" />
+                            </div>
+                            <div className="testimonials-profile-right">
+                                <h3>John Fernandez</h3>
+                                <p>Aaro ivan aaro</p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+                <div className="testimonials-main-bottom">
                 <motion.div
-                    variants={Variant1}
+                    variants={Variant3}
                     whileInView={getVariant()}
                     viewport={{ once: true }}
                     className="testimonials-container"
@@ -69,36 +134,11 @@ const Testimonials = () => {
                     <LuQuote className="testimonials-quote-icon" />
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? Impedit qui non accusamus
-                        mollitia ullam, libero at! laudantium impedit quam quis cupiditate quos odio? Impedit qui non
-                        accusamus mollitia ullam, libero at!
+                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio?
                     </p>
                     <div className="testimonials-profile">
                         <div className="testimonials-profile-left">
-                            <img src={profile_img1} alt="" />
-                        </div>
-                        <div className="testimonials-profile-right">
-                            <h3>John Fernandez</h3>
-                            <p>Aaro ivan aaro</p>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
-                    variants={Variant2}
-                    whileInView={getVariant()}
-                    viewport={{ once: true }}
-                    className="testimonials-container"
-                >
-                    <LuQuote className="testimonials-quote-icon" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? Impedit qui non accusamus
-                        mollitia ullam, libero at! laudantium impedit quam quis cupiditate quos odio? Impedit qui non
-                        accusamus mollitia ullam, libero at!
-                    </p>
-                    <div className="testimonials-profile">
-                        <div className="testimonials-profile-left">
-                            <img src={profile_img2} alt="" />
+                            <img src={profile_img3} alt="" />
                         </div>
                         <div className="testimonials-profile-right">
                             <h3>John Fernandez</h3>
@@ -115,9 +155,7 @@ const Testimonials = () => {
                     <LuQuote className="testimonials-quote-icon" />
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? Impedit qui non accusamus
-                        mollitia ullam, libero at! laudantium impedit quam quis cupiditate quos odio? Impedit qui non
-                        accusamus mollitia ullam, libero at!
+                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? 
                     </p>
                     <div className="testimonials-profile">
                         <div className="testimonials-profile-left">
@@ -129,6 +167,28 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </motion.div>
+                <motion.div
+                    variants={Variant3}
+                    whileInView={getVariant()}
+                    viewport={{ once: true }}
+                    className="testimonials-container"
+                >
+                    <LuQuote className="testimonials-quote-icon" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
+                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio?
+                    </p>
+                    <div className="testimonials-profile">
+                        <div className="testimonials-profile-left">
+                            <img src={profile_img3} alt="" />
+                        </div>
+                        <div className="testimonials-profile-right">
+                            <h3>John Fernandez</h3>
+                            <p>Aaro ivan aaro</p>
+                        </div>
+                    </div>
+                </motion.div>
+                </div>
             </div>
         </div>
     )

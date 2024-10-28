@@ -75,6 +75,15 @@
     .pricing{
         padding: 5rem 15%;
     }
+    .pricing-main{
+        margin-top: 3rem;
+    }
+    .pricing-container{
+        font-size: 1.5rem;
+    }
+    .pricing-container h3{
+        font-size: 2rem;
+    }
 }
 @media(max-width:900px){
     .pricing{

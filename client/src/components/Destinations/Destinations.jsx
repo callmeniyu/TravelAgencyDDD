@@ -78,7 +78,7 @@ const Destinations = () => {
                             a deeply spiritual experience.{" "}
                         </p>
                         <div className="destinations-container-btn">
-                            Know Details <FaLongArrowAltRight className="arrow" />
+                            Coming Soon...
                         </div>
                     </div>
                 </motion.div>
@@ -101,7 +101,7 @@ const Destinations = () => {
                             thousands of devotees and trekkers each year.{" "}
                         </p>
                         <div className="destinations-container-btn">
-                            Know Details <FaLongArrowAltRight className="arrow" />
+                            Coming Soon...
                         </div>
                     </div>
                 </motion.div>
@@ -124,7 +124,7 @@ const Destinations = () => {
                             markets, and spiritual energy.{" "}
                         </p>
                         <div className="destinations-container-btn">
-                            Know Details <FaLongArrowAltRight className="arrow" />
+                            Coming Soon...
                         </div>
                     </div>
                 </motion.div>

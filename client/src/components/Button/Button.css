@@ -12,4 +12,10 @@
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 0.5rem;
+}
+@media(min-width:1300px){
+    .button{
+        padding: 0 !important;
+    }
 }
