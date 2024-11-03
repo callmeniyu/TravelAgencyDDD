@@ -8,6 +8,8 @@ import { useMediaQuery } from "react-responsive"
 
 const About = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 600 })
+    const heightClass = isSmallScreen == false ? { height: "100vh", overflowY: "auto" } : {height:"100%"};
+
     const h2Variant = {
         small: {
             x: [-10, 0],
@@ -39,7 +41,7 @@ const About = () => {
     }
 
     return (
-        <div className="about">
+        <div className="about" style={heightClass}>
             <h2 className="section-header"><SectionTitle text="about us" />
             What Sets Us Apart</h2>
             <div className="about-main">

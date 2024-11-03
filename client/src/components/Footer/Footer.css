@@ -22,21 +22,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 1rem;
+    text-align: right;
 }
 .footer-social{
     display: flex;
     gap: 1rem;
 }
+.footer-social a{
+    color: white;
+    text-decoration: none;
+}
 .footer-social-icon{
     font-size: 2rem;
     cursor: pointer;
+    transition: ease-in 0.2s;
 }
-.footer-right p{
+.footer-social-icon:hover{
+    transform: scale(1.2);
 }
 .footer-left p{
-    width: 50%;
+    width: 50%; 
 }
 .footer-mark{
     text-align: center;

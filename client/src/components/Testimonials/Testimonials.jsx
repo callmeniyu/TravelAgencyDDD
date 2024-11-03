@@ -5,71 +5,48 @@ import { LuQuote } from "react-icons/lu"
 import profile_img1 from "../../assets/images/testimonial_img1.jpg"
 import profile_img2 from "../../assets/images/testimonial_img2.jpg"
 import profile_img3 from "../../assets/images/testimonial_img5.jpg"
-import { motion } from "framer-motion"
+import moments_img1 from "../../assets/images/moments_img1.jpg"
+import moments_img2 from "../../assets/images/moments_img2.jpg"
+import moments_img3 from "../../assets/images/moments_img3.jpg"
 import { useMediaQuery } from "react-responsive"
+import { Carousel } from "react-responsive-3d-carousel"
+import { FaStar } from "react-icons/fa6"
 
 const Testimonials = () => {
-    const isSmallScreen = useMediaQuery({ maxWidth: 600 })
-
-    const Variant1 = {
-        small: {
-            y: [-50, 0],
-            opacity: [0, 1],
-            transition: { delay: 0.3, duration: 0.5, type: "spring", stiffness: 30, damping: 10 },
-        },
-        large: {
-            y: [-50, 0],
-            opacity: [0, 1],
-            transition: { delay: 0.3, duration: 0.5, type: "spring", stiffness: 30, damping: 10 },
-        },
-    }
-    const Variant2 = {
-        small: {
-            y: [-50, 0],
-            opacity: [0, 1],
-            transition: { delay: 0.5, duration: 0.5, type: "spring", stiffness: 30, damping: 10 },
-        },
-        large: {
-            y: [-50, 0],
-            opacity: [0, 1],
-            transition: { delay: 0.5, duration: 0.5, type: "spring", stiffness: 30, damping: 10 },
-        },
-    }
-    const Variant3 = {
-        small: {
-            y: [-50, 0],
-            opacity: [0, 1],
-            transition: { delay: 0.8, duration: 0.5, type: "spring", stiffness: 30, damping: 10 },
-        },
-        large: {
-            y: [-50, 0],
-            opacity: [0, 1],
-            transition: { delay: 0.8, duration: 0.5, type: "spring", stiffness: 30, damping: 10 },
-        },
-    }
-
-    const getVariant = () => {
-        if (isSmallScreen) return "small"
-        return "large"
-    }
+    const isSmall = useMediaQuery({ maxWidth: 600 })
+    const isLarge = useMediaQuery({ minWidth: 1300 })
+    const carouselHeight = isLarge ? "33rem" : "24rem"
+    const carouselWidth = isLarge ? "25rem" : "20.5"
+    const smallStyle = { width: "120%" }
     return (
-        <div className="testimonials">
-            <h2 className="section-header">
-                <SectionTitle text="testimonials" />
-                Reviews and Reflections
-            </h2>
-            <div className="testimonials-main">
-                <div className="testimonials-main-top">
-                    <motion.div
-                        variants={Variant1}
-                        whileInView={getVariant()}
-                        viewport={{ once: true }}
-                        className="testimonials-container"
-                    >
+        <>
+            <div className="testimonials">
+                <h2 className="section-header">
+                    <SectionTitle text="testimonials" />
+                    Reviews and Reflections
+                </h2>
+                <Carousel
+                    interval="4000"
+                    autoPlay={false}
+                    showIndicators={false}
+                    width={isLarge ? "25rem" : "20.5rem"}
+                    height={carouselHeight || "24rem"}
+                    showStatus={false}
+                    arrowsWidth="2rem"
+                    arrowsHeight="2rem"
+                    arrowsDefaultColor="black"
+                    isArrowsShadow={false}
+                    selectable={true}
+                    showArrows={!isSmall}
+                    className="testimonials-main"
+                    style={isSmall ? smallStyle : ""}
+                >
+                    <div className="testimonials-container">
                         <LuQuote className="testimonials-quote-icon" />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                            sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? 
+                            What an amazing experience! Everything was perfectly organized, from start to finish. I felt
+                            completely taken care of, and it made the whole journey so much more meaningful. Best wishes to
+                            Divine Destination Discoveries – you guys deserve all the success!
                         </p>
                         <div className="testimonials-profile">
                             <div className="testimonials-profile-left">
@@ -77,41 +54,33 @@ const Testimonials = () => {
                             </div>
                             <div className="testimonials-profile-right">
                                 <h3>John Fernandez</h3>
-                                <p>Aaro ivan aaro</p>
+                                <p>Traveller</p>
+                                <div className="testimonial-profile-star-div">
+                                    <FaStar className="testimonial-profile-star" />
+                                    <FaStar className="testimonial-profile-star" />
+                                    <FaStar className="testimonial-profile-star" />
+                                    <FaStar className="testimonial-profile-star" />
+                                    <FaStar className="testimonial-profile-star" />
+                                </div>
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        variants={Variant2}
-                        whileInView={getVariant()}
-                        viewport={{ once: true }}
-                        className="testimonials-container"
-                    >
-                        <LuQuote className="testimonials-quote-icon" />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                            sapiente tenetur, laudantium impedit quam quis cupiditate quos odio?
-                        </p>
-                        <div className="testimonials-profile">
-                            <div className="testimonials-profile-left">
-                                <img src={profile_img2} alt="" />
-                            </div>
-                            <div className="testimonials-profile-right">
-                                <h3>John Fernandez</h3>
-                                <p>Aaro ivan aaro</p>
-                            </div>
+                    </div>
+                    <div className="testimonials-moments-container">
+                        <div className="testimonials-moments-top">
+                            <img src={moments_img1} alt="moments-img" />
                         </div>
-                    </motion.div>
-                    <motion.div
-                        variants={Variant3}
-                        whileInView={getVariant()}
-                        viewport={{ once: true }}
-                        className="testimonials-container"
-                    >
+                        <div className="testimonials-moments-bottom">
+                            <p>
+                                Absolutely fantastic! We couldn't have imagined such a smooth and fulfilling trip. Thanks
+                                for all the attention to detail and the warm hospitality.
+                            </p>
+                            <h3>Kedarnath</h3>
+                        </div>
+                    </div>
+                    <div className="testimonials-container">
                         <LuQuote className="testimonials-quote-icon" />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                            sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? 
+                            Divine Destination Discoveries truly exceeded my expectations. I loved how easy everything was, from the booking to the final return.
                         </p>
                         <div className="testimonials-profile">
                             <div className="testimonials-profile-left">
@@ -119,78 +88,55 @@ const Testimonials = () => {
                             </div>
                             <div className="testimonials-profile-right">
                                 <h3>John Fernandez</h3>
-                                <p>Aaro ivan aaro</p>
+                                <p>CEO razio.ai</p>
+                                <div className="testimonial-profile-star-div">
+                                    <FaStar className="testimonial-profile-star" />
+                                    <FaStar className="testimonial-profile-star" />
+                                    <FaStar className="testimonial-profile-star" />
+                                </div>
                             </div>
                         </div>
-                    </motion.div>
-                </div>
-                <div className="testimonials-main-bottom">
-                <motion.div
-                    variants={Variant3}
-                    whileInView={getVariant()}
-                    viewport={{ once: true }}
-                    className="testimonials-container"
-                >
-                    <LuQuote className="testimonials-quote-icon" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio?
-                    </p>
-                    <div className="testimonials-profile">
-                        <div className="testimonials-profile-left">
-                            <img src={profile_img3} alt="" />
+                    </div>
+                    <div className="testimonials-moments-container">
+                        <div className="testimonials-moments-top">
+                            <img src={moments_img2} alt="moments-img" />
                         </div>
-                        <div className="testimonials-profile-right">
-                            <h3>John Fernandez</h3>
-                            <p>Aaro ivan aaro</p>
+                        <div className="testimonials-moments-bottom">
+                            <p>
+                            This was hands-down the best travel experience I’ve had! Everything was well planned, and the guides were so knowledgeable.
+                            </p>
+                            <h3>Chopta</h3>
                         </div>
                     </div>
-                </motion.div>
-                <motion.div
-                    variants={Variant3}
-                    whileInView={getVariant()}
-                    viewport={{ once: true }}
-                    className="testimonials-container"
-                >
-                    <LuQuote className="testimonials-quote-icon" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio? 
-                    </p>
-                    <div className="testimonials-profile">
-                        <div className="testimonials-profile-left">
-                            <img src={profile_img3} alt="" />
-                        </div>
-                        <div className="testimonials-profile-right">
-                            <h3>John Fernandez</h3>
-                            <p>Aaro ivan aaro</p>
+                    <div className="testimonials-container">
+                        <LuQuote className="testimonials-quote-icon" />
+                        <p>
+                            Such a wonderful experience! I felt like a VIP the whole time. You took care of every little detail, and it made a huge difference. Thank you for the amazing trip, and best of luck for all your future journeys!
+                        </p>
+                        <div className="testimonials-profile">
+                            <div className="testimonials-profile-left">
+                                <img src={profile_img3} alt="" />
+                            </div>
+                            <div className="testimonials-profile-right">
+                                <h3>Niyas</h3>
+                                <p>Devguru</p>
+                            </div>
                         </div>
                     </div>
-                </motion.div>
-                <motion.div
-                    variants={Variant3}
-                    whileInView={getVariant()}
-                    viewport={{ once: true }}
-                    className="testimonials-container"
-                >
-                    <LuQuote className="testimonials-quote-icon" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi, quaerat provident totam
-                        sapiente tenetur, laudantium impedit quam quis cupiditate quos odio?
-                    </p>
-                    <div className="testimonials-profile">
-                        <div className="testimonials-profile-left">
-                            <img src={profile_img3} alt="" />
+                    <div className="testimonials-moments-container">
+                        <div className="testimonials-moments-top">
+                            <img src={moments_img3} alt="moments-img" />
                         </div>
-                        <div className="testimonials-profile-right">
-                            <h3>John Fernandez</h3>
-                            <p>Aaro ivan aaro</p>
+                        <div className="testimonials-moments-bottom">
+                            <p>
+                            Thanks for all the attention to detail and the warm hospitality.
+                            </p>
+                            <h3></h3>
                         </div>
                     </div>
-                </motion.div>
-                </div>
+                </Carousel>
             </div>
-        </div>
+        </>
     )
 }
 

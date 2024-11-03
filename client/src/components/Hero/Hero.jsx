@@ -3,7 +3,7 @@ import './Hero.css';
 import hero_img1 from '../../assets/images/hero1.png';
 import hero_img2 from '../../assets/images/hero4.png';
 import hero_img3 from '../../assets/images/hero3.png';
-import hero_img4 from '../../assets/images/hero2.png';
+import maha_kumb_mela from '../../assets/images/maha_kumb_mela.png';
 
 const Navbar = lazy(() => import('../Navbar/Navbar'));
 
@@ -18,16 +18,16 @@ const Hero = () => {
   let runNextAuto;
   let runTimeOut;
 
-  // const lazyLoadImages = (imageUrls) => {
-  //   imageUrls.forEach((url) => {
-  //     const img = new Image();
-  //     img.src = url;
-  //     img.loading = 'lazy'; 
-  //   });
-  // };
+  const lazyLoadImages = (imageUrls) => {
+    imageUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+      img.loading = 'lazy'; 
+    });
+  };
 
-  // const imagesToPreload = [hero_img1, hero_img2, hero_img3, hero_img4];
-  // lazyLoadImages(imagesToPreload);
+  const imagesToPreload = [hero_img1, hero_img2, hero_img3, maha_kumb_mela];
+  lazyLoadImages(imagesToPreload);
 
   // Optimized slider function with useCallback
   const showSlider = useCallback((type) => {
@@ -44,38 +44,27 @@ const Hero = () => {
       carouselRef.current.classList.add('prev');
     }
 
-    // clearTimeout(runTimeOut);
-    // runTimeOut = setTimeout(() => {
-    //   carouselRef.current.classList.remove('next');
-    //   carouselRef.current.classList.remove('prev');
-    // }, 1000);
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+      carouselRef.current.classList.remove('next');
+      carouselRef.current.classList.remove('prev');
+    }, 1000);
     // Reduced timeout for better UX
 
-    // clearTimeout(runNextAuto);
-    // runNextAuto = setTimeout(() => {
-    //   nextRef.current.click();
-    // }, timeAutoNext);
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+      nextRef.current.click();
+    }, timeAutoNext);
   }, [timeAutoNext]);
 
   useEffect(() => {
         nextRef.current.onclick = () => showSlider('next');
     prevRef.current.onclick = () => showSlider('prev');
-  },[showSlider])
-
-  // Use useEffect for auto-slide functionality
-  // useEffect(() => {
-  //   runNextAuto = setTimeout(() => {
-  //     nextRef.current.click();
-  //   }, timeAutoNext);
-
-  //   nextRef.current.onclick = () => showSlider('next');
-  //   prevRef.current.onclick = () => showSlider('prev');
-
-  //   return () => {
-  //     clearTimeout(runNextAuto);
-  //     clearTimeout(runTimeOut);
-  //   };
-  // }, [showSlider]);
+  }, [showSlider])
+  
+  const windowScroll = () => {
+    window.scrollTo(0,3000)
+}
 
   return (
     <div>
@@ -86,6 +75,17 @@ const Hero = () => {
       </header>
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={sliderRef}>
+          <div className="item">
+            <img src={maha_kumb_mela} alt="hero4" loading="lazy" />
+            <div className="content">
+              <div className="author">WELCOME ABOARD!</div>
+              <div className="title">The Greatest Festival Awaits <span className='hero-title-span'>Maha Kumbh Mela 2025</span></div>
+              <div className="des">The world’s most sacred gathering, Maha Kumbh Mela, is here! Embrace this unparalleled chance to witness spiritual harmony, and the transformative power of India’s holiest celebration.</div>
+              <div className="buttons">
+                <button onClick={windowScroll}>SEE DETAILS</button>
+              </div>
+            </div>
+          </div>
           <div className="item">
             <img src={hero_img1} alt="hero1" loading="lazy" />
             <div className="content">
@@ -122,20 +122,15 @@ const Hero = () => {
               </div> */}
             </div>
           </div>
-          <div className="item">
-            <img src={hero_img4} alt="hero4" loading="lazy" />
-            <div className="content">
-              <div className="author">WELCOME ABOARD!</div>
-              <div className="title">Walk the Sacred Trails of India’s <span className='hero-title-span'>Ancient Holy Sites</span></div>
-              <div className="des">Embark on a soul-stirring journey through India’s sacred temples, rivers, and mountains.</div>
-              {/* <div className="buttons">
-                <button>SEE DETAILS</button>
-                <button>CONTACT</button>
-              </div> */}
-            </div>
-          </div>
         </div>
         <div className="thumbnail" ref={thumbnailRef}>
+        <div className="item">
+            <img src={hero_img1} alt="thumbnail4" loading="lazy" />
+            <div className="content">
+              <div className="title">Varanasi</div>
+              <div className="description">Uttar Pradesh</div>
+            </div>
+          </div>
           <div className="item">
             <img src={hero_img2} alt="thumbnail1" loading="lazy" />
             <div className="content">
@@ -151,17 +146,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="item">
-            <img src={hero_img4} alt="thumbnail3" loading="lazy" />
+            <img src={maha_kumb_mela} alt="thumbnail3" loading="lazy" />
             <div className="content">
-              <div className="title">Title</div>
-              <div className="description">Description</div>
-            </div>
-          </div>
-          <div className="item">
-            <img src={hero_img1} alt="thumbnail4" loading="lazy" />
-            <div className="content">
-              <div className="title">Varanasi</div>
-              <div className="description">Uttar Pradesh</div>
+              <div className="title">Maha Kubm Mela</div>
+              <div className="description">Prayagraj</div>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@
     display: flex;
     background-color: white;
     border-radius: 1rem;
+    padding-bottom: 1rem;
 }
 .contact-left {
     width: 40%;
@@ -72,6 +73,29 @@
     border-radius: 0.5rem;
     align-self: center;
     cursor: pointer;
+    border: none;
+    font-size: 0.9rem;
+}
+.contact-alert-div{
+    display: none !important;
+    width: 22rem;
+    position: relative;
+    bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-alert{
+    display: flex;
+    width: 22rem;
+    align-items: center;
+    justify-content: center;
+}
+.contact-alert-on{
+    display: block !important;
+}
+.contact-success-close-icon{
+    cursor:pointer;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
 }
 @media(min-width:1300px){
     .contact{
@@ -99,12 +123,13 @@
     }
     .contact-left{
         height: 45rem;
-        background-color: red;
     }
 }
 @media(max-width:700px){
     .contact-left{
         width: 45%;
+        height: 45rem;
+
     }
     .contact{
         padding:0 1rem ;
@@ -112,9 +137,9 @@
     .contact-right{
         padding: 2rem ;
     }
-    .contact-left{
-        height: 45rem;
-        background-color: red;
+
+    .contact-left img{
+        height: 21rem;
     }
 }
 @media(max-width:550px){

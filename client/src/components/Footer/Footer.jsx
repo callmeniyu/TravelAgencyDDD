@@ -5,7 +5,8 @@ import Logo from "../../assets/images/logo_white.png"
 import { FaInstagram } from "react-icons/fa"
 import { FaPhone } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
-import { FaTwitter } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa";
+
 
 const Footer = () => {
     return (
@@ -23,12 +24,12 @@ const Footer = () => {
                 </div>
                 <div className="footer-right">
                     <div className="footer-social">
-                        <Link></Link>
-                        <FaPhone className="footer-social-icon" />
-                        <FaWhatsapp className="footer-social-icon" />
-                        <FaTwitter className="footer-social-icon" />
+                        <a href="tel:+919717495669"><FaPhone className="footer-social-icon" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=+919717495669&text=Hi! I’d like to know more about your travel packages."><FaWhatsapp className="footer-social-icon" /></a>
+                        <a href="https://www.instagram.com/divine.destination.discoveries?igsh=OHJzY2ljam9yNTl1&utm_source=qr"><FaInstagram className="footer-social-icon" /></a>
+                        <a href="https://www.linkedin.com/company/divine-destination-discoveries/"><FaLinkedin className="footer-social-icon" /></a>
                     </div>
-                    <p>©DD. All Rights Reserved</p>
+                    <p>©Divine Destionation Discoveries. <br /> All Rights Reserved</p>
                 </div>
             </div>
             <p className="footer-mark">
