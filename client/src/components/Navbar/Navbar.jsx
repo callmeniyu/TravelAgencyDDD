@@ -15,7 +15,7 @@ const Navbar = ({logo}) => {
     const [menuToggle, setMenuToggle] = useState(false)
     return (
         <div className={`navbar ${menuToggle == true ? "nav-on" : ""}`}>
-            <Link className="nav-logo">
+            <Link className="nav-logo" to="/">
                 <img src={logo == "black" ? Logo_black : Logo_white} alt="nav-logo" />
                 <h2 className={`${logo == "black" ? "logo-black" : ""}`}>{ isSmall? "DDD" : "Divine Destination Discoveries"}</h2>
             </Link>

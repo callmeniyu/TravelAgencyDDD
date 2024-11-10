@@ -5,7 +5,6 @@ import SectionTitle from "../SectionTitle/SectionTitle"
 import destinations_img1 from "../../assets/images/destinations.jpeg"
 import destinations_img2 from "../../assets/images/hero_img4.jpg"
 import destinations_img3 from "../../assets/images/hero_img1.jpeg"
-import { FaLongArrowAltRight } from "react-icons/fa"
 import { motion } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
 const Destinations = () => {

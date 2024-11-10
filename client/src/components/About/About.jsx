@@ -1,7 +1,6 @@
 import React from "react"
 import "./About.css"
 import SectionTitle from "../SectionTitle/SectionTitle"
-import about_img from "../../assets/images/about.jpeg"
 import Spiritual_BG from "../../assets/images/Spiritual_BG.jpg"
 import { motion } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
