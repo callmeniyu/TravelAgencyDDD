@@ -1,0 +1,11 @@
+/* Add this CSS to your stylesheet or component's CSS module */
+.test{
+}
+.chrono-icons {
+    display: none; /* Hides the toolbar icons */
+  }
+  .chrono-controls {
+    display: none; /* Hides control buttons if they appear */
+  }
+
+#root{ padding: 10px; }

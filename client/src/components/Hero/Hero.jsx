@@ -4,6 +4,7 @@ import hero_img1 from '../../assets/images/hero1.png';
 import hero_img2 from '../../assets/images/hero4.png';
 import hero_img3 from '../../assets/images/hero3.png';
 import maha_kumb_mela from '../../assets/images/maha_kumb_mela.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = lazy(() => import('../Navbar/Navbar'));
 
@@ -62,9 +63,6 @@ const Hero = () => {
     prevRef.current.onclick = () => showSlider('prev');
   }, [showSlider])
   
-  const windowScroll = () => {
-    window.scrollTo(0,3000)
-}
 
   return (
     <div>
@@ -82,7 +80,7 @@ const Hero = () => {
               <div className="title">The Greatest Festival Awaits <span className='hero-title-span'>Maha Kumbh Mela 2025</span></div>
               <div className="des">The world’s most sacred gathering, Maha Kumbh Mela, is here! Embrace this unparalleled chance to witness spiritual harmony, and the transformative power of India’s holiest celebration.</div>
               <div className="buttons">
-                <button onClick={windowScroll}>SEE DETAILS</button>
+                <Link to="/packages"><button>SEE DETAILS</button></Link>
               </div>
             </div>
           </div>

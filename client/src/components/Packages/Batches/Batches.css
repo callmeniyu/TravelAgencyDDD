@@ -1,0 +1,8 @@
+.pbatches{
+    padding: 6rem 3rem 4rem;
+}
+.pbatches-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem !important;
+}

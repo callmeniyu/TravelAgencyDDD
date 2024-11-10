@@ -54,11 +54,13 @@
 }
 .carousel .list .item .buttons button{
     border: none;
+    width: 12rem;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+    padding: 0.5rem 1.5rem;
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;

@@ -43,45 +43,21 @@
 .featured-right{
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    padding:2rem 1rem;
-    border-radius: 1rem;
-    border: 4px solid var(--orange_color);
-}
-.featured-right .quote-text{
-    position: relative;
-}
-.featured-right input{
-    width: 12rem;
-    height: 2rem;
-    border: 1px solid rgb(219, 219, 219);
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-.featured-right input:focus{
-    outline: none;
-}
-.featured-right div{
-    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-.features-submit-btn{
-    background-color: rgb(20, 19, 19);
-    background-color: var(--orange_color);
-    height: 2.5rem;
-    padding:0.2rem 2rem;
-    display: flex;
-    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    color: white;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+}
+.featured-right img{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border: 4px solid rgb(175, 175, 175);
+    border-radius: 1rem;
+}
+.featured-right-top,
+.featured-right-bottom{
+    display: flex;
+    gap: 1rem;
 }
 @media(min-width:1300px){
     .featured{
@@ -98,15 +74,6 @@
         width: 14rem !important;
         padding: 1.2rem !important;
     }
-    .featured-right{
-        align-content: start;
-        height: max-content;
-    }
-    .featured-right input{
-        width: 14rem;
-        height: 2.5rem;
-
-    }
     .features-submit-btn{
         padding: 2rem ;
     }
@@ -119,7 +86,7 @@
         font-size: 1.8rem;
     }
 }
-@media(max-width:750px){
+@media(max-width:800px){
     .featured-main{
         flex-direction: column;
     }
@@ -129,9 +96,17 @@
     .featured-right{
         width: 100%;
     }
+    .featured-right img{
+        width: 16rem;
+        height: 16rem;
+    }
 }
-@media(max-width:600px){
+@media(max-width:630px){
     .featured{
         padding: 1rem;
+    }
+    .featured-right img{
+        width: 11rem;
+        height: 11rem;
     }
 }

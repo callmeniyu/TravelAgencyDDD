@@ -1,0 +1,29 @@
+.p-pricing{
+    padding: 3rem 0 3rem;
+}
+.p-pricing-main{
+    padding: 0 2rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.p-pricing-box{
+    display: flex !important;
+}
+.p-pricing-card{
+}
+.p-pricing-old {
+    text-decoration: line-through;
+}
+.p-pricing-new {
+    position: relative;
+    right: 3rem;
+}
+@media(max-width:600px){
+    .p-pricing-box{
+        flex-direction: column;
+    }
+    .p-pricing-new{
+        right: 0;
+    }
+}

@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="footer-mark">
-                designed by <span>Devguru</span>
+                designed by <span><a href="https://devgurusolutions.tech/">Devguru</a></span>
             </p>
         </div>
     )

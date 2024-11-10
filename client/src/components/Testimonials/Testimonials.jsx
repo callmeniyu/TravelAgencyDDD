@@ -2,9 +2,9 @@ import React from "react"
 import "./Testimonials.css"
 import SectionTitle from "../SectionTitle/SectionTitle"
 import { LuQuote } from "react-icons/lu"
-import profile_img1 from "../../assets/images/testimonial_img1.jpg"
-import profile_img2 from "../../assets/images/testimonial_img2.jpg"
-import profile_img3 from "../../assets/images/testimonial_img5.jpg"
+import profile_img1 from "../../assets/images/testimonial_img1.jpeg"
+import profile_img2 from "../../assets/images/testimonial_img2.jpeg"
+import profile_img3 from "../../assets/images/testimonial_img3.jpeg"
 import moments_img1 from "../../assets/images/moments_img1.jpg"
 import moments_img2 from "../../assets/images/moments_img2.jpg"
 import moments_img3 from "../../assets/images/moments_img3.jpg"
@@ -53,8 +53,7 @@ const Testimonials = () => {
                                 <img src={profile_img1} alt="" />
                             </div>
                             <div className="testimonials-profile-right">
-                                <h3>John Fernandez</h3>
-                                <p>Traveller</p>
+                                <h3>Rajesh Sharma</h3>
                                 <div className="testimonial-profile-star-div">
                                     <FaStar className="testimonial-profile-star" />
                                     <FaStar className="testimonial-profile-star" />
@@ -84,11 +83,10 @@ const Testimonials = () => {
                         </p>
                         <div className="testimonials-profile">
                             <div className="testimonials-profile-left">
-                                <img src={profile_img3} alt="" />
+                                <img src={profile_img2} alt="" />
                             </div>
                             <div className="testimonials-profile-right">
-                                <h3>John Fernandez</h3>
-                                <p>CEO razio.ai</p>
+                                <h3>Vikram Reddy</h3>
                                 <div className="testimonial-profile-star-div">
                                     <FaStar className="testimonial-profile-star" />
                                     <FaStar className="testimonial-profile-star" />
@@ -118,8 +116,7 @@ const Testimonials = () => {
                                 <img src={profile_img3} alt="" />
                             </div>
                             <div className="testimonials-profile-right">
-                                <h3>Niyas</h3>
-                                <p>Devguru</p>
+                                <h3>Arjun Patel</h3>
                             </div>
                         </div>
                     </div>

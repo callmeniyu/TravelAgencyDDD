@@ -3,6 +3,9 @@
 :root{
     --orange_color:#f1693b;
 }
+#root{
+    padding: 0;
+}
 *{
     box-sizing: border-box;
     font-family: "poppins";
