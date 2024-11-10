@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="footer-left">
                     <div className="nav-logo">
                         <img src={Logo} alt="" />
-                        <h2>Divine Destionation Discoveries</h2>
+                        <Link style={{color:"white"}}>Divine Destionation Discoveries</Link>
                     </div>
                     <p>
                         DDD, A-36, Block-A<br />
