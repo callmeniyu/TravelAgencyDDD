@@ -38,7 +38,20 @@ function App() {
                         </Suspense>
                     }
                 />
-                <Route path="/contact" element={<Contact />} />
+                <Route
+                    path="/contact"
+                    element={
+                        <Suspense
+                            fallback={
+                                <div className="loader-container">
+                                    <PropagateLoader data-testid="loader" color="#f1693b" className="loader" />
+                                </div>
+                            }
+                        >
+                            <Contact />
+                        </Suspense>
+                    }
+                />
                 <Route path="*" element={<Error404 />} />
             </Routes>
         </BrowserRouter>
