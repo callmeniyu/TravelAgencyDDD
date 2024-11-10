@@ -4,7 +4,7 @@ const Home = React.lazy(() => import("./pages/Home/Home"))
 const Contact = React.lazy(() => import("./pages/Contact/Contact"))
 const Packages = React.lazy(() => import("./pages/Packages/Packages"))
 import PropagateLoader from "react-spinners/PropagateLoader"
-import Test from "./pages/Test"
+import Error404 from "./pages/Error/Error404"
 
 function App() {
     return (
@@ -38,8 +38,8 @@ function App() {
                         </Suspense>
                     }
                 />
-                <Route path="/test" element={<Test />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
         </BrowserRouter>
     )
