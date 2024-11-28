@@ -110,3 +110,12 @@
         height: 11rem;
     }
 }
+@media(max-width:400px){
+    .featured-main{
+        padding: 1rem;
+    }
+    .featured-right img{
+        width: 9rem;
+        height: 10rem;
+    }
+}

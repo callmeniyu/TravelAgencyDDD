@@ -52,10 +52,10 @@ const Hero = () => {
     }, 1000);
     // Reduced timeout for better UX
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-      nextRef.current.click();
-    }, timeAutoNext);
+    // clearTimeout(runNextAuto);
+    // runNextAuto = setTimeout(() => {
+    //   nextRef.current.click();
+    // }, timeAutoNext);
   }, [timeAutoNext]);
 
   useEffect(() => {
