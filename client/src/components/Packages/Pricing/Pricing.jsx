@@ -109,7 +109,7 @@ const Pricing = () => {
                                 <ListItemDecorator>
                                     <IoMdCheckmark />
                                 </ListItemDecorator>
-                                Comfortable riverside camping (3 nights)
+                                Comfortable accommodation in Deluxe Luxury room 2 nights
                             </ListItem>
                             <ListItem>
                                 <ListItemDecorator>
@@ -140,7 +140,7 @@ const Pricing = () => {
                         <Divider inset="none" />
                         <CardActions>
                             <Typography textColor="text.tertiary" sx={{ fontSize: "sm" }}>
-                            Offer valid till 30th November 2024</Typography>
+                            Offer valid till Jan 8th 2024</Typography>
                         </CardActions>
                     </Card>
                 </Box>
