@@ -115,7 +115,7 @@ const Pricing = () => {
                                 <ListItemDecorator>
                                     <IoMdCheckmark />
                                 </ListItemDecorator>
-                                Round-trip by train with transfers to the venue                            </ListItem>
+                                Round-trip by bus/travaller with transfers to the venue                            </ListItem>
                             <ListItem>
                                 <ListItemDecorator>
                                     <IoMdCheckmark />
